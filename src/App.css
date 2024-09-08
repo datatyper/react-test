@@ -1,0 +1,29 @@
+.logo {
+  height: 4em;
+  padding: 10px;
+  will-change: filter;
+  transition: filter 10000ms;
+}
+
+.logo:hover {
+  /* filter: drop-shadow(0 0 2em #646cffaa); */
+  /* Change color on hover */
+  filter: hue-rotate(90deg);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(60deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 3s ease-in-out;
+  }
+}
